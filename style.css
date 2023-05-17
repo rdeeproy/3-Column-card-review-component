@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: (0, 0%, 95%);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+img{
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+
+.grid-wrapper{
+    max-width:320px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+
+}
+.card-1{
+  background-color: hsl(31, 100%, 26%);
+  color: hsl(31, 100%, 23%);
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-2{
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(184, 100%, 22%);
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.card-3{
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(179, 100%, 13%);
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1{
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 95%) ;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+p{
+  font-size: 0.9rem;
+  color:hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 1.5rem ;
+  line-height: 150%;
+}
+button{
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.9rem;
+  border-radius: 1.6rem;
+  color:inherit;
+  border: solid 2px  hsl(0, 0%, 95%);
+  transition: 300ms;
+  cursor: pointer;
+
+
+}
+
+button:hover{
+  background-color: inherit;
+  color:  hsl(0, 0%, 95%);
+  border: solid 2px  hsl(0, 0%, 95%);
+
+}
+@media(min-width:992px){
+  .grid-wrapper{
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  button{
+    margin-top: 3rem;
+  }
+}
+
